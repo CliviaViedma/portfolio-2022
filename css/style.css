@@ -218,7 +218,7 @@ body{
 
 .title-projects{
     text-align: center;
-    padding-top: 4em;
+    padding-top: 3em;
     font-size: 3em;  
     color: #ff3300;
 }
@@ -387,7 +387,15 @@ body{
     width: 34vw;
 }
 
+.input:hover{
+    box-shadow: 1px 1px 10px 1px #9783fc;
+}
+
 .input:focus{
+    box-shadow: 1px 1px 10px 1px #9783fc;
+}
+
+.textarea:hover{
     box-shadow: 1px 1px 10px 1px #9783fc;
 }
 
@@ -567,7 +575,7 @@ body{
     }
 }
 
-@media(max-width:768px){
+@media(min-width:481px) and (max-width:768px){
 
     /*SECTION PRESENTATION*/
 
@@ -654,12 +662,12 @@ body{
     }
 }
 
-@media(max-width:320px){
+@media(min-width:320px) and (max-width:480px){
 
     /*SECTION PRESENTATION*/
 
     .presentation{
-        width: 146vw;
+        width: 205vw;
     }
 
     .primary-box{   
@@ -677,7 +685,7 @@ body{
     /*SECTION KNOWLEDGE*/
 
     .knowledge{
-        width: 146vw;
+        width: 205vw;
     }
 
     .description-section{
@@ -687,78 +695,120 @@ body{
 
     .box{
         width: 100vw;
+        align-self: center;
+    }
+
+    .box-image{
+        width: 50%;  
+        padding-top: 2em;
+    }
+
+    .title-box{
+        font-size: 1.4em;
+        margin-bottom: 2em;
     }
 
     /*SECTION SENTENCE*/
 
     .sentence{
-        width:146vw ;
+        width:205vw ;
     }
 
     .sentence-text{
         max-width: 125vw;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     /*SECTION PROJECTS*/
 
     .projects{
-        width: 146vw;
+        width: 205vw;
     }
 
     .bigbox{
-        width: 100vw;
+        width: 120vw;
+       margin-left: 10em;
     }
 
+    .bigbox-image{
+        height: 60vh;
+        align-content: center;
+    }
+
+    .title-bigbox{
+        font-size:1.4em ;
+    }
     /*SECTION FORMS*/
 
     .forms{
-        width: 146vw;
+        width: 205vw;
         background-color: white;
         padding-top: 0;
         border-top: 1px solid #e6e3f0;
     }
 
     .forms-container{
-        width: 120vw;
+        max-width: 200vw;
         border: none;
+        margin: 0;
+        
+        flex-direction: column;
     }
 
     .contact{
-        width: 120%
+        width: 190%
     }
 
     .description-form{
-        max-width: 100vw;
-        font-size: 1.1em;
+        max-width: 150vw;
+        font-size: 1.4em;
     }
 
     .item-form{
-        max-width: 100vw;
+        max-width: 120vw;
+        font-size: 1.5em;
+        padding: 0.5em 0.5em;
       
     }
 
+    .bi{
+        padding: 0.3em 0.3;
+    }
+
+    .title-form{
+        margin-top: 2em;
+    }
+
     .label{
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .input{
-        font-size: 1em;
-        width: 100vw;
+        font-size: 1.1em;
+        width: 140vw;
+        height: 2.2em;
     }
 
     .textarea{
         font-size: 1em;
-        width: 100vw;
+        width: 140vw;
+    }
+
+    .send-form{
+        font-size: 1.7em;
     }
 
     /*SECTION FOOTER*/
 
     .footer{
-        width: 146vw;
+        width: 205vw;
     }
 
     .nav-secondary{
         display: none;
+    }
+
+    .firm{
+        font-size: 1.3em;
     }
 }
