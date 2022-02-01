@@ -919,13 +919,13 @@ body{
         }
     
         .bigbox-container{
-            padding: 0em 1em 0em 1em;
+            padding: 0em 2em 0em 2em;
             margin-top: 4em;
         }
     
         .bigbox{
-            width: 90vw;  
-            height: 100vh;   
+            width: 80vw;  
+            height: 90vh;   
         }
     
         .bigbox-image{
@@ -985,7 +985,6 @@ body{
     
         .input{
             width: 80vw;
-            height: 10vh;
         }
     
         .email{
