@@ -620,15 +620,15 @@ body{
 
     /*SECTION SENTENCE*/
 
-    .projects{
-        padding-bottom:0;
-    }
-
     .sentence-text{
         max-width: 90vw;
     }
 
     /*SECTION PROJECTS*/
+
+    .projects{
+        padding-bottom:0;
+    }
 
     .bigbox-container{
         padding: 0em 4em 0em 4em;
@@ -771,7 +771,7 @@ body{
 
     .bigbox{
         width: 80vw;  
-        height: 90vh;   
+        height: 80vh;   
     }
 
     .bigbox-image{
@@ -924,7 +924,7 @@ body{
     
         .bigbox{
             width: 80vw;  
-            height: 90vh;   
+            height: 80vh;   
         }
     
         .bigbox-image{
