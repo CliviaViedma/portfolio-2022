@@ -72,6 +72,7 @@ body{
     box-shadow: 1px 1px 20px 1px #eec9ff;
     background-color: #ff0000;
 }
+/*End of Header*/
 
 /*About Me*/
 
@@ -128,6 +129,10 @@ body{
 .image-presentation{
     width: 100%;
 }
+
+/*End of About Me*/
+
+/*END OF SECTION PRESENTATION*/
 
 /*SECTION KNOWLEDGE*/
 
@@ -186,6 +191,8 @@ body{
     font-weight: 500;
 }
 
+/*END OF SECTION KNOWLEDGE*/
+
 /*SECTION SENTENCE*/
 
 .sentence{
@@ -209,7 +216,10 @@ body{
     padding-bottom: 8em;
 }
 
+/*END OF SECTION SENTENCE*/
+
 /*SECTION PROJECTS*/
+
 .projects{
     background-color: white;
     padding-bottom: 10em;
@@ -262,6 +272,8 @@ body{
 .title-bigbox{
      font-weight: 500;
 }
+
+/*END OF SECTION PROJECTS*/
 
 /*SECTION FORMS*/
 
@@ -336,6 +348,8 @@ body{
     box-shadow: 1px 1px 10px 1px #9783fc ;
     border-radius: 50px;
 }
+
+/*End of Section Contact me*/
 
 /*Section Write Me*/
 
@@ -428,6 +442,10 @@ body{
     background-color: #ff0000;
 }
 
+/*End of Section Write Me*/
+
+/*END OF SECTION FORMS*/
+
 /*SECTION FOOTER*/
 
 .footer{
@@ -491,6 +509,8 @@ body{
    padding-bottom: 5em;
    text-align: center;
 }
+
+/*END OF SECTION FOOTER*/
 
 /*MEDIA QUERIES*/
 
@@ -947,13 +967,13 @@ body{
         .list-form{
             display: block;
             justify-content: space-between;
-            width: 100vw;         
+            width: 90vw;         
         }
     
         .item-form{
             max-width: 100%;
             display: inline-block;
-            padding-right: 5em;
+            padding-right:0;
             font-size: 0.9em;
         }
     
