@@ -1,9 +1,9 @@
 *,
 *::after,
 *::before{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -79,7 +79,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 16em 4em 5em 4em ;
+    padding: 16em 4em 5em 4em;
 }
 
 .primary-box{
@@ -133,12 +133,11 @@ body{
 
 .knowledge{
     background-color: #f2f0f7;
-    padding-bottom: 10em;
+    padding-bottom: 10em; 
 }
 
 .title-section{
     text-align: center; 
-    margin-top: 2em;
     padding-top: 3em;
     font-size: 3em;
     color: #ff3300;
@@ -149,7 +148,7 @@ body{
     margin: auto;
     color: rgb(119, 116, 116);
     margin-top: 1em;
-    max-width: 29%;
+    max-width: 30vw;
 }
 
 .box-container{
@@ -190,7 +189,7 @@ body{
 /*SECTION SENTENCE*/
 
 .sentence{
-    background-color:#ff3300 ;   
+    background-color:#ff3300 ;  
 }
 
 .quotes{
@@ -216,7 +215,7 @@ body{
     padding-bottom: 10em;
 }
 
-.title-projects{
+.title-section{
     text-align: center;
     padding-top: 3em;
     font-size: 3em;  
@@ -227,20 +226,20 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-top: 8em;  
-    align-items: center;
-    margin-left: 3.5em;
+    justify-content: space-between;
+    padding: 0em 9em 0em 8em;
 }
 
 .bigbox{
     background-color: white;
     border-radius: 10px;
-    width: 28vw;
+    width: 25vw;
+    height: 25vw;
     text-align: center;
     border: 1px solid #e6e3f0;
     margin-top: 1.3em;
     text-decoration: none;
     color: black;
-    margin-left: 1.3em;
     padding-bottom: 3em;
 }
 
@@ -254,12 +253,13 @@ body{
 }
 
 .bigbox-image{
-    height:25vh;
+    width: 100%;
+    height: 70%;
     margin-top: 3.5em;
+    padding: 2em 2em 2em 2em;
 }
 
 .title-bigbox{
-     margin-top: 2em;
      font-weight: 500;
 }
 
@@ -281,7 +281,7 @@ body{
     padding: 6em 4em;
 }
 
-.contact{
+.contact-me{
     width: 40vw;
 }
 
@@ -290,7 +290,7 @@ body{
     color:#ff3300;
 }
 
-/*Section Contact*/
+/*Section Contact me*/
 
 .description-form{
     margin-top: 2em;
@@ -433,6 +433,7 @@ body{
 .footer{
     background-color: #ff3300;
     color: white;
+    width: 100%; 
 }
 
 
@@ -474,7 +475,6 @@ body{
 .icon{
     background-color: tomato;
     color: white;
-   
 }
 
 .icon:hover{
@@ -494,321 +494,493 @@ body{
 
 /*MEDIA QUERIES*/
 
-@media(max-width:992px){
+@media (min-width:1025px) and (max-width:1236px){
 
     /*SECTION PRESENTATION*/
 
-    /*Header*/
+    .presentation-container{
+        padding: 16em 2em 5em 2em;;
+    }
+
+    .description-section{
+        max-width: 40vw;
+    }
+
+    /*SECTION SENTENCE*/
+
+    .sentence-text{
+        max-width: 65vw;
+    }
+
+    /*SECTION PROJECTS*/
+
+    .title-section{
+        margin-top:0;
+    }
+
+    .bigbox-container{
+        padding: 0em 2em 0em 2em;
+        margin-top: 5em;    
+    }
+
+    .bigbox{
+        width: 30vw;
+    }
+
+    .bigbox-image{
+        width: 100%;
+        height: 90%;
+        margin-top: 0.8em;
+    }
+
+    /*SECTION FORMS*/
+    
+    .forms-container{
+        padding: 6em 2em;
+        width: 90vw;
+    }
+
+    /*Section Contact Me*/
+
+    .description-form{
+        max-width: 35vw;
+    }
+
+    .item-form{
+        max-width: 30vw;
+    }
+    
+    /*Section Write me*/
+
+    .input{
+        height: 10vh;
+    }
+
+    .textarea{
+        width: 34vw;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+
+    /*SECTION PRESENTATION*/
 
     .header{
         display: none;
     }
 
-    /*Section about me*/
+    /*Section About me*/
 
     .presentation-container{
         flex-direction: column;
-        text-align: center;
+        padding: 5em 0em 5em 0em;
         align-content: center;
-        padding-top: 0; 
-        margin-top: 5em;    
+        text-align: center;
     }
-
-    .name-subname{
-        margin-top: 0.5em;
-    }
-
-    .image-presentation{
-        margin-top: 3em;
-    }
-
-    /*SECTION KNOWLEGDE*/
-
-    .description-section{
-        max-width: 50vw ;
-    }
-
-    /*SECTION SENTENCE*/
-
-    .sentence-text{
-        max-width: 70vw;
-    }
-
-    /*SECTION FORMS*/
-
-    .forms-container{
-        width: 90vw;
-        padding: 4em 2em;
-        padding-bottom: 4em;
-    }
-
-    .title-form{
-        font-size: 2.5em;
-    }
-
-    /*Section Contact*/
-
-    .description-form{
-      max-width: 40vw;
-    }
-
-    .item-form{
-        padding: 0;
-        margin-top: 1.2em;
-        font-size: 0.9em;
-    }
-
-    /*Section write me*/
-
-    .input{
-        width: 18vw;
-        height: 10vh;
-    }
-
-    .email{
-       width: 38vw;
-    }
-
-    .textarea{
-        width: 38vw;
-        display: inline-block;
-    }
-}
-
-@media(min-width:481px) and (max-width:768px){
-
-    /*SECTION PRESENTATION*/
 
     .primary-box{
-        width: 100vw;
+        width: 100%;
     }
 
     .secondary-box{
-        width: 80vw;
+        width: 80%;
         margin: auto;
+        margin-top: 3em;
     }
 
     /*SECTION KNOWLEDGE*/
 
-    .box{
-      width: 30vw;
+    .description-section{
+        max-width: 50vw;
+    }
+
+    .box-container{
+        width: 90vw;
     }
 
     /*SECTION SENTENCE*/
 
+    .projects{
+        padding-bottom:0;
+    }
+
     .sentence-text{
-        font-size: 1.5em;
+        max-width: 90vw;
     }
 
     /*SECTION PROJECTS*/
 
+    .bigbox-container{
+        padding: 0em 4em 0em 4em;
+        margin-top: 5em;
+    }
+
     .bigbox{
-        width: 40vw;
+        width: 40vw;  
+        height: 100vh;   
+    }
+
+    .bigbox-image{
+        width: 100%;
+        height: 90%;
+        margin-top: 1em;
     }
 
     /*SECTION FORMS*/
 
-    .forms-container{
-        flex-direction: column;
+    .forms{
+        background-color: white;
     }
 
-    /*Section Contact*/
+    .forms-container{
+        width: 100%;
+        border: none;
+        padding: 6em 2em;
+        flex-direction: column;
+        border-top: 1px solid #e6e3f0 ;
+        border-radius: 0;
+    }
 
-    .contact{
-        width: 90%;  
-    } 
-    
+    .contact-me{
+        width: 100%;
+        padding: 0em 1em 0em 1em;    
+    }
+
     .description-form{
-        max-width: 50vw;   
+        max-width: 50vw;     
     }
 
     .list-form{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.2em;
-        width: 100%;    
+        display: block;
+        justify-content: space-between;
+        width: 80vw;
     }
 
     .item-form{
-        max-width: 80vw;
-        margin-right: 3em;
+        max-width: 80%;
+        display: inline-block;
+        padding-right: 5em;
     }
-
-    /*Section write me*/
 
     .write-me{
         width: 100%;
-        
+        padding: 0em 1em 0em 1em;
+        margin-top: 3em;
     }
 
-    .title-form{
-        margin-top: 2em;
-    }
-
-    .label{
-        margin-right: 3em;
-    }
+    /*Section Write Me*/
 
     .input{
-     width: 30vw;
+        width: 39vw;
+        height: 15vh;
     }
 
     .email{
-        width: 68vw;
+        width: 80vw;
     }
 
     .textarea{
-        width: 68vw;
+        width: 80vw;
     }
 }
 
-@media(min-width:320px) and (max-width:480px){
+@media (min-width:481px) and (max-width:768px){
+    
+     /*SECTION PRESENTATION*/
 
-    /*SECTION PRESENTATION*/
-
-    .presentation{
-        width: 205vw;
+     .header{
+        display: none;
     }
 
-    .primary-box{   
-        width: 120vw;
+    /*Section About me*/
+
+    .presentation-container{
+        flex-direction: column;
+        padding: 5em 0em 5em 0em;
+        align-content: center;
+        text-align: center;
     }
 
-    .description{
-        font-size: 1.3em;
+    .primary-box{
+        width: 100%;
     }
 
-    .image-presentation{
-        width: 100vw;
+    .secondary-box{
+        width: 80%;
+        margin: auto;
+        margin-top: 3em;
     }
 
     /*SECTION KNOWLEDGE*/
 
-    .knowledge{
-        width: 205vw;
+    .title-section{
+        font-size: 2.5em;
     }
 
     .description-section{
-        max-width: 100vw;
-        font-size: 1.3em;
+        max-width: 80vw;
+    }
+
+    .box-container{
+        width: 100vw;
+        padding:0em 1em 0em 1em;
     }
 
     .box{
-        width: 100vw;
-        align-self: center;
-    }
-
-    .box-image{
-        width: 50%;  
-        padding-top: 2em;
-    }
-
-    .title-box{
-        font-size: 1.4em;
-        margin-bottom: 2em;
+        width: 45vw;
+        margin-top: 0.5em;
     }
 
     /*SECTION SENTENCE*/
 
-    .sentence{
-        width:205vw ;
-    }
-
     .sentence-text{
-        max-width: 125vw;
-        font-size: 1.4em;
+        max-width: 90vw;
+        font-size: 1.3em;
     }
 
     /*SECTION PROJECTS*/
 
     .projects{
-        width: 205vw;
+        padding-bottom:0;
+    }
+
+    .bigbox-container{
+        padding: 0em 4em 0em 4em;
+        margin-top: 5em;
     }
 
     .bigbox{
-        width: 120vw;
-       margin-left: 10em;
+        width: 80vw;  
+        height: 100vh;   
     }
 
     .bigbox-image{
-        height: 60vh;
-        align-content: center;
+        width: 100%;
+        height: 90%;
+        margin-top: 1em;
     }
 
-    .title-bigbox{
-        font-size:1.4em ;
-    }
     /*SECTION FORMS*/
 
     .forms{
-        width: 205vw;
         background-color: white;
-        padding-top: 0;
-        border-top: 1px solid #e6e3f0;
     }
 
     .forms-container{
-        max-width: 200vw;
+        width: 100%;
         border: none;
-        margin: 0;
-        
+        padding: 6em 2em;
         flex-direction: column;
+        border-top: 1px solid #e6e3f0 ;
+        border-radius: 0;
     }
 
-    .contact{
-        width: 190%
+    .contact-me{
+        width: 100%;
+        padding: 0em 1em 0em 1em;    
     }
 
     .description-form{
-        max-width: 150vw;
-        font-size: 1.4em;
+        max-width: 80vw;     
+    }
+
+    .list-form{
+        display: block;
+        justify-content: space-between;
+        width: 80vw;      
     }
 
     .item-form{
-        max-width: 120vw;
-        font-size: 1.5em;
-        padding: 0.5em 0.5em;
-      
+        max-width: 100%;
+        display: inline-block;
+        padding-right: 5em;
     }
 
-    .bi{
-        padding: 0.3em 0.3;
+    .write-me{
+        width: 100%;
+        padding: 0em 1em 0em 1em;
+        margin-top: 3em;
     }
 
-    .title-form{
-        margin-top: 2em;
-    }
-
-    .label{
-        font-size: 1.5em;
-    }
+    /*Section Write Me*/
 
     .input{
-        font-size: 1.1em;
-        width: 140vw;
-        height: 2.2em;
+        width: 80vw;
+        height: 15vh;
+    }
+
+    .email{
+        width: 80vw;
     }
 
     .textarea{
-        font-size: 1em;
-        width: 140vw;
+        width: 80vw;
     }
 
-    .send-form{
-        font-size: 1.7em;
-    }
-
-    /*SECTION FOOTER*/
-
-    .footer{
-        width: 205vw;
-    }
+    /*FOOTER*/
 
     .nav-secondary{
         display: none;
     }
+}
 
-    .firm{
-        font-size: 1.3em;
-    }
+@media (min-width:320px) and (max-width:480px){
+    
+        /*SECTION PRESENTATION*/
+
+        .header{
+            display: none;
+        }
+    
+        /*Section About me*/
+    
+        .presentation-container{
+            flex-direction: column;
+            padding: 5em 0em 5em 0em;
+            align-content: center;
+            text-align: center;
+        }
+    
+        .primary-box{
+            width: 100%;
+        }
+    
+        .secondary-box{
+            width: 80%;
+            margin: auto;
+            margin-top: 3em;
+        }
+    
+        /*SECTION KNOWLEDGE*/
+
+        .knowledge{
+            padding-bottom: 8em;
+        }
+    
+        .title-section{
+            font-size: 2em;
+        }
+    
+        .description-section{
+            max-width: 80vw;
+        }
+    
+        .box-container{
+            width: 100vw;
+            padding:0em 1em 0em 1em;
+            margin-top: 3em;
+        }
+    
+        .box{
+            width: 60vw;
+            margin-top: 0.5em;
+        }
+    
+        /*SECTION SENTENCE*/
+    
+        .quotes{
+            padding-top: 5em;
+        }
+        
+        .sentence-text{
+            max-width: 90vw;
+            font-size: 1em;
+        }
+
+    
+        /*SECTION PROJECTS*/
+    
+        .projects{
+            padding-bottom:0;
+        }
+
+        .title-section{
+            margin-top: 0;
+        }
+    
+        .bigbox-container{
+            padding: 0em 1em 0em 1em;
+            margin-top: 4em;
+        }
+    
+        .bigbox{
+            width: 90vw;  
+            height: 100vh;   
+        }
+    
+        .bigbox-image{
+            width: 100%;
+            height: 90%;
+            margin-top: 1em;
+        }
+    
+        /*SECTION FORMS*/
+    
+        .forms{
+            background-color: white;
+            padding-top: 8em;     
+        }
+    
+        .forms-container{
+            width: 100%;
+            border: none;
+            padding: 6em 1em;
+            flex-direction: column;
+            border-top: 1px solid #e6e3f0 ;
+            border-radius: 0;
+        }
+    
+        .title-form{
+            font-size: 2.2em;
+        }
+
+        .contact-me{
+            width: 100%;
+            padding: 0em 1em 0em 1em;    
+        }
+    
+        .description-form{
+            max-width: 90vw; 
+            font-size: 0.9em;    
+        }
+    
+        .list-form{
+            display: block;
+            justify-content: space-between;
+            width: 100vw;         
+        }
+    
+        .item-form{
+            max-width: 100%;
+            display: inline-block;
+            padding-right: 5em;
+            font-size: 0.9em;
+        }
+    
+        .write-me{
+            width: 100%;
+            padding: 0em 1em 0em 1em;
+            margin-top: 3em;
+        }
+    
+        /*Section Write Me*/
+    
+        .input{
+            width: 80vw;
+            height: 15vh;
+        }
+    
+        .email{
+            width: 80vw;
+        }
+    
+        .textarea{
+            width: 80vw;
+        }
+    
+        /*FOOTER*/
+    
+        .nav-secondary{
+            display: none;
+        }
 }
