@@ -956,7 +956,7 @@ body{
 
         .contact-me{
             width: 100%;
-            padding: 0em 1em 0em 1em;    
+            padding: 0em;    
         }
     
         .description-form{
@@ -965,14 +965,12 @@ body{
         }
     
         .list-form{
-            display: block;
-            justify-content: space-between;
+            flex-direction: column;
             width: 90vw;         
         }
     
         .item-form{
-            max-width: 100%;
-            display: inline-block;
+            max-width: 90%;
             padding-right:0;
             font-size: 0.9em;
         }
@@ -987,7 +985,7 @@ body{
     
         .input{
             width: 80vw;
-            height: 15vh;
+            height: 10vh;
         }
     
         .email{
